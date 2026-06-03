@@ -1,0 +1,2 @@
+const stats=[['250+','Projects Completed'],['10+','Years Experience'],['100%','Custom Designs'],['Premium','Materials']];
+export function Stats(){return <section className="bg-white"><div className="container-lux grid border-y border-ink/10 md:grid-cols-4">{stats.map(([n,l])=><div key={l} className="p-8 md:border-r md:last:border-r-0 border-ink/10"><p className="text-3xl font-medium tracking-[-.04em] text-deepTeal">{n}</p><p className="mt-2 text-sm text-ink/55">{l}</p></div>)}</div></section>}

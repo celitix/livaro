@@ -1,0 +1,1 @@
+Place your LIVARO furniture images here. V2 uses hybrid mode: remote premium images are currently wired in lib/constants.ts, and you can replace them with local paths like /images/furniture/your-image.jpg anytime.

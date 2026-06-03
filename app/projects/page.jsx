@@ -1,0 +1,3 @@
+import { PageHero } from '@/components/shared/page-hero';import { MasonryGrid } from '@/components/gallery/masonry-grid';import { img } from '@/lib/constants';
+export const metadata={title:'Projects',description:'LIVARO portfolio of modular kitchens, wardrobes and custom furniture projects.'};
+export default function Projects(){return <><PageHero label="Portfolio" title="A curated gallery of refined modular spaces." text="Explore kitchens, wardrobes and furniture compositions designed with premium materials and calm architectural detail." image={img.heroSide}/><section className="section bg-white"><div className="container-lux"><MasonryGrid/></div></section></>}
