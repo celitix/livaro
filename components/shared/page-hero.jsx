@@ -17,7 +17,7 @@ export function PageHero({ label, title, text, image }) {
           </p>
         </div>
 
-        <div className="relative image-frame h-[310px] rounded-[34px] shadow-luxury overflow-hidden">
+        <div className="relative image-frame h-[450px] rounded-[34px] shadow-luxury overflow-hidden">
           <Image
             src={image}
             alt={title}
