@@ -45,7 +45,7 @@ export default function Contact() {
             </div>
             <div className="mt-8 overflow-hidden rounded-[26px] border border-white/10 shadow-soft">
               <iframe
-                src="https://maps.google.com/maps?q=22%20I%20Floor%20Biswa%20Nagar%20New%20Sanganer%20Road%20Jaipur%20Rajasthan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.613905276216!2d75.76518077624551!3d26.884005261322198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5a39c00b48d%3A0x979a9b7673dfc5b9!2sLIVARO!5e0!3m2!1sen!2sus!4v1780658002960!5m2!1sen!2sus"
                 width="100%"
                 height="320"
                 style={{ border: 0 }}
