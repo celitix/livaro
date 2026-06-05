@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,36 +27,22 @@ export function Navigation() {
       }`}
     >
       <div className="container-lux flex h-20 items-center justify-between">
-
-        {/* LOGO */}
         <Link href="/" className="group flex items-center gap-3">
-          <span className="grid h-11 w-11 place-items-center rounded-full bg-deepTeal text-white font-semibold tracking-[-.05em]">
-            L
-          </span>
-
-          <span>
-            <span className="block text-xl tracking-[.16em] font-semibold">
-              LIVARO
-            </span>
-
-            <span className="block text-[10px] uppercase tracking-[.22em] text-luxuryGold">
-              Kitchen | Wardrobes | Furniture
-            </span>
-          </span>
+          <Image
+            src="/images/hero/headerLogoBlack.png" 
+            alt="LIVARO Logo"
+            width={240}
+            height={200}
+            className="object-cover"
+          />
         </Link>
 
         {/* DESKTOP NAV */}
         <nav className="hidden lg:flex items-center gap-7 text-[13px] font-semibold text-ink/75">
-          <Link
-            href="/"
-            className="hover:text-deepTeal transition-colors"
-          >
+          <Link href="/" className="hover:text-deepTeal transition-colors">
             Home
           </Link>
-          <Link
-            href="/about"
-            className="hover:text-deepTeal transition-colors"
-          >
+          <Link href="/about" className="hover:text-deepTeal transition-colors">
             About
           </Link>
           <Link
@@ -129,10 +116,7 @@ export function Navigation() {
           >
             Projects
           </Link>
-          <Link
-            href="/blog"
-            className="hover:text-deepTeal transition-colors"
-          >
+          <Link href="/blog" className="hover:text-deepTeal transition-colors">
             Blog
           </Link>
           <Link
@@ -145,22 +129,15 @@ export function Navigation() {
 
         {/* CTA */}
         <div className="hidden lg:block">
-          <Link
-            href="/contact"
-            className="btn-secondary !py-3"
-          >
+          <Link href="/contact" className="btn-secondary !py-3">
             Free Consultation
           </Link>
         </div>
 
         {/* MOBILE BUTTON */}
-        <button
-          className="lg:hidden"
-          onClick={() => setOpen(!open)}
-        >
+        <button className="lg:hidden" onClick={() => setOpen(!open)}>
           {open ? <X /> : <Menu />}
         </button>
-
       </div>
 
       {/* MOBILE MENU */}
@@ -239,16 +216,11 @@ export function Navigation() {
             Contact
           </Link>
 
-          <Link
-            href="/contact"
-            className="btn-primary mt-4"
-          >
+          <Link href="/contact" className="btn-primary mt-4">
             Free Consultation
           </Link>
-
         </div>
       )}
-
     </header>
   );
 }

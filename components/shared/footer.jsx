@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -6,28 +7,32 @@ export function Footer() {
       <div className="container-lux py-20 grid gap-14 lg:grid-cols-[1.4fr_1fr_1fr]">
         {/* BRAND SECTION */}
         <div>
-          <h2 className="text-3xl font-semibold tracking-[.22em]">LIVARO</h2>
+          <Image
+            src="/images/hero/headerLogogold.png"
+            alt="LIVARO Logo"
+            width={280}
+            height={200}
+            className="object-cover"
+          />
 
-          <div className="mt-3 h-[2px] w-20 bg-luxuryGold rounded-full" />
-
-          <p className="mt-6 max-w-md text-white/60 leading-8 text-sm">
+          <p className="mt-3 max-w-md text-white/80 leading-8 text-sm">
             Premium modular kitchens, wardrobes and bespoke furniture crafted
             with timeless elegance, intelligent functionality and refined modern
             aesthetics.
           </p>
 
-          <p className="mt-8 text-luxuryGold text-sm tracking-[.14em] uppercase">
+          <p className="mt-4 text-luxuryGold text-sm tracking-[.14em] uppercase">
             Kitchen | Wardrobes | Furniture
           </p>
         </div>
 
         {/* EXPLORE */}
-        <div>
-          <h4 className="text-sm uppercase tracking-[.24em] text-luxuryGold">
+        <div className="md:text-center text-left w-full">
+          <h4 className="text-sm uppercase tracking-[.24em] text-luxuryGold mr-5">
             Explore
           </h4>
 
-          <div className="mt-7 grid gap-4 text-sm">
+          <div className="mt-7 grid gap-4 text-sm text-start md:justify-center justify-start">
             <Link
               href="/about"
               className="text-white/70 hover:text-luxuryGold transition"
