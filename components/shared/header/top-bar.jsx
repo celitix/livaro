@@ -1,5 +1,4 @@
 import { Mail, Phone } from "lucide-react";
-import { brand } from "@/lib/constants";
 
 function InstagramMark() {
   return (
@@ -31,11 +30,11 @@ export function TopBar() {
         <div className="flex gap-5">
           <span className="flex items-center gap-2">
             <Mail size={13} />
-            {brand.email}
+            info@livarostudio.com
           </span>
           <span className="hidden sm:flex items-center gap-2">
             <Phone size={13} />
-            {brand.phone}
+            +91 9314-00-3146
           </span>
         </div>
         <div className="flex items-center gap-3 text-white/85">

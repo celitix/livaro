@@ -1,2 +1,25 @@
-const config = { content: ['./app/**/*.{js,jsx}', './components/**/*.{js,jsx}', './lib/**/*.{js,jsx}'], theme: { extend: { colors: { deepTeal: 'var(--deep-teal)', darkEmerald: 'var(--dark-emerald)', luxuryGold: 'var(--luxury-gold)', warmSand: 'var(--warm-sand)', softGold: 'var(--soft-beige-gold)', concrete: 'var(--concrete-grey)', ink: 'var(--ink)' }, fontFamily: { sans: ['Manrope','Inter','sans-serif'] }, boxShadow:{luxury:'0 24px 80px rgba(17,17,17,.12)'}, letterSpacing:{luxury:'.22em'} } }, plugins: [] };
+const config = {
+  content: [
+    "./app/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./lib/**/*.{js,jsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        deepTeal: "var(--deep-teal)",
+        darkEmerald: "var(--dark-emerald)",
+        luxuryGold: "var(--luxury-gold)",
+        warmSand: "var(--warm-sand)",
+        softGold: "var(--soft-beige-gold)",
+        concrete: "var(--concrete-grey)",
+        ink: "var(--ink)",
+      },
+      fontFamily: { sans: ["Manrope", "Inter", "sans-serif"] },
+      boxShadow: { luxury: "0 24px 80px rgba(17,17,17,.12)" },
+      letterSpacing: { luxury: ".22em" },
+    },
+  },
+  plugins: [],
+};
 export default config;

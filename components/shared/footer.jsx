@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { brand, navItems } from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -18,7 +17,7 @@ export function Footer() {
           </p>
 
           <p className="mt-8 text-luxuryGold text-sm tracking-[.14em] uppercase">
-            {brand.tagline}
+            Kitchen | Wardrobes | Furniture
           </p>
         </div>
 
@@ -29,32 +28,46 @@ export function Footer() {
           </h4>
 
           <div className="mt-7 grid gap-4 text-sm">
-            {navItems.slice(1, 6).map((n) =>
-              n.children ? (
-                <div key={n.label}>
-                  {/* Furniture Children */}
-                  <div className=" grid gap-2">
-                    {n.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="text-white/55 hover:text-luxuryGold transition"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
+            <Link
+              href="/about"
+              className="text-white/70 hover:text-luxuryGold transition"
+            >
+              About
+            </Link>
+            <Link
+              href="/modular-kitchens"
+              className="text-white/70 hover:text-luxuryGold transition"
+            >
+              Modular Kitchens
+            </Link>
+            <Link
+              href="/wardrobes"
+              className="text-white/70 hover:text-luxuryGold transition"
+            >
+              Wardrobes
+            </Link>
+            <div>
+              <div className="grid gap-2">
                 <Link
-                  key={n.label}
-                  href={n.href}
-                  className="text-white/70 hover:text-luxuryGold transition"
+                  href="/furniture/home"
+                  className="text-white/55 hover:text-luxuryGold transition"
                 >
-                  {n.label}
+                  Home Furniture
                 </Link>
-              ),
-            )}
+                <Link
+                  href="/furniture/office"
+                  className="text-white/55 hover:text-luxuryGold transition"
+                >
+                  Office Furniture
+                </Link>
+              </div>
+            </div>
+            <Link
+              href="/projects"
+              className="text-white/70 hover:text-luxuryGold transition"
+            >
+              Projects
+            </Link>
           </div>
         </div>
 
@@ -69,14 +82,14 @@ export function Footer() {
               <p className="text-white text-xs uppercase tracking-[.18em] mb-2">
                 Email
               </p>
-              <span>{brand.email}</span>
+              <span>info@livarostudio.com</span>
             </div>
 
             <div>
               <p className="text-white text-xs uppercase tracking-[.18em] mb-2">
                 Phone
               </p>
-              <span>{brand.phone}</span>
+              <span>+91 9314-00-3146</span>
             </div>
 
             <div>

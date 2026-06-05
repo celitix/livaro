@@ -2,11 +2,12 @@
   "name": "livaro-next-jsx-v2",
   "version": "2.0.0-jsx",
   "private": true,
-  "scripts": {
-    "dev": "next dev -p 3011",
-    "build": "next build",
-    "start": "next start"
-  },
+"scripts": {
+  "dev": "next dev -p 3011",
+  "build": "next build",
+  "start": "next start -p 3011",
+  "lint": "next lint"
+},
   "dependencies": {
     "@radix-ui/react-slot": "latest",
     "class-variance-authority": "latest",
@@ -14,9 +15,9 @@
     "embla-carousel-react": "latest",
     "framer-motion": "latest",
     "lucide-react": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "next": "^14.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwind-merge": "latest"
   },
   "devDependencies": {

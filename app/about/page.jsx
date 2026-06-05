@@ -1,22 +1,37 @@
 import Image from "next/image";
 
 import { CTABanner } from "@/components/sections/cta-banner";
-import { img } from "@/lib/constants";
-import { PageHero } from "@/components/shared/page-hero";
 
 export const metadata = {
   title: "About",
   description: "LIVARO brand story, values and design philosophy.",
 };
+
 export default function About() {
   return (
     <>
-      <PageHero
-        label="About Studio"
-        title="A refined interior studio for modern modular living."
-        text="LIVARO blends design sensitivity, premium materials and precise execution to create spaces that feel calm, functional and deeply personal."
-        image={img.about}
-      />
+      <section className="relative overflow-hidden texture noise">
+        <div className="container-lux grid min-h-[430px] items-center gap-10 py-16 md:grid-cols-[.9fr_1.1fr]">
+          <div>
+            <p className="label">About Studio</p>
+            <h1 className="h1 mt-4 max-w-2xl">
+              A refined interior studio for modern modular living.
+            </h1>
+            <p className="muted mt-5 max-w-xl leading-8">
+              LIVARO blends design sensitivity, premium materials and precise execution to create spaces that feel calm, functional and deeply personal.
+            </p>
+          </div>
+          <div className="relative image-frame h-[450px] rounded-[34px] shadow-luxury overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+              alt="A refined interior studio for modern modular living."
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </section>
       <section className="section bg-white">
         <div className="container-lux grid gap-10 lg:grid-cols-2">
           <div>
@@ -37,16 +52,30 @@ export default function About() {
           </div>
         </div>
         <div className="container-lux mt-12 grid gap-6 md:grid-cols-3">
-          {["Vision", "Mission", "Values"].map((v, i) => (
-            <div className="rounded-[30px] bg-[#f7f2e8] p-8" key={v}>
-              <span className="text-luxuryGold">0{i + 1}</span>
-              <h3 className="mt-6 text-xl font-medium">{v}</h3>
-              <p className="muted mt-3 leading-7">
-                To create premium modular interiors that are beautiful, durable
-                and tailored to every home.
-              </p>
-            </div>
-          ))}
+          <div className="rounded-[30px] bg-[#f7f2e8] p-8">
+            <span className="text-luxuryGold">01</span>
+            <h3 className="mt-6 text-xl font-medium">Vision</h3>
+            <p className="muted mt-3 leading-7">
+              To create premium modular interiors that are beautiful, durable
+              and tailored to every home.
+            </p>
+          </div>
+          <div className="rounded-[30px] bg-[#f7f2e8] p-8">
+            <span className="text-luxuryGold">02</span>
+            <h3 className="mt-6 text-xl font-medium">Mission</h3>
+            <p className="muted mt-3 leading-7">
+              To create premium modular interiors that are beautiful, durable
+              and tailored to every home.
+            </p>
+          </div>
+          <div className="rounded-[30px] bg-[#f7f2e8] p-8">
+            <span className="text-luxuryGold">03</span>
+            <h3 className="mt-6 text-xl font-medium">Values</h3>
+            <p className="muted mt-3 leading-7">
+              To create premium modular interiors that are beautiful, durable
+              and tailored to every home.
+            </p>
+          </div>
         </div>
       </section>
       <CTABanner />
