@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { ContactForm } from "@/components/forms/contact-form";
 
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 export const metadata = {
   title: "Contact",
   description:
@@ -39,9 +42,24 @@ export default function Contact() {
             <p className="label">Reach Us</p>
             <h2 className="h3 mt-5">Book a Free Consultation</h2>
             <div className="mt-8 space-y-4 text-white/75">
-              <p>info@livarostudio.com</p>
+            <div className="flex items-center gap-2">
+              <MdEmail className="text-lg" />
+              <p> info@livarostudio.com</p>
+            </div>
+            <div className="flex items-center gap-2">
+                <FaPhoneAlt className="text-lg" />
               <p>+91 9314-00-3146</p>
-              <p>Jaipur, Rajasthan</p>
+            </div>
+            <div className="flex items-start gap-2">
+                <FaLocationDot className="text-lg mt-1" />
+              <p>
+                22, I Floor, Biswa Nagar,
+                <br />
+                New Sanganer Road,
+                <br />
+                Jaipur, Rajasthan
+              </p>
+            </div>
             </div>
             <div className="mt-8 overflow-hidden rounded-[26px] border border-white/10 shadow-soft">
               <iframe

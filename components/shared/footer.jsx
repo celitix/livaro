@@ -20,10 +20,6 @@ export function Footer() {
             with timeless elegance, intelligent functionality and refined modern
             aesthetics.
           </p>
-
-          <p className="mt-4 text-luxuryGold text-sm tracking-[.14em] uppercase">
-            Kitchen | Wardrobes | Furniture
-          </p>
         </div>
 
         {/* EXPLORE */}
@@ -52,7 +48,7 @@ export function Footer() {
               Wardrobes
             </Link>
             <div>
-              <div className="grid gap-2">
+              <div className="grid gap-4">
                 <Link
                   href="/furniture/home"
                   className="text-white/55 hover:text-luxuryGold transition"
@@ -87,14 +83,14 @@ export function Footer() {
               <p className="text-white text-xs uppercase tracking-[.18em] mb-2">
                 Email
               </p>
-              <span>info@livarostudio.com</span>
+              <span className="text-white/80">info@livarostudio.com</span>
             </div>
 
             <div>
               <p className="text-white text-xs uppercase tracking-[.18em] mb-2">
                 Phone
               </p>
-              <span>+91 9314-00-3146</span>
+              <span className="text-white/80">+91 9314-00-3146</span>
             </div>
 
             <div>
@@ -102,7 +98,7 @@ export function Footer() {
                 Studio Address
               </p>
 
-              <span>
+              <span className="text-white/80">
                 22, I Floor, Biswa Nagar,
                 <br />
                 New Sanganer Road,
@@ -118,13 +114,22 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-lux py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40">
-            © 2026 LIVARO. Crafted for refined modern living.
+            © 2026 LIVARO. All rights reserved. Designed by{" "}
+            <span className="text-luxuryGold">
+              <Link
+                target="_blank"
+                href="https://www.proactivedigital.in"
+                className="hover:text-luxuryGold transition"
+              >
+                Proactive Professional Services Pvt Ltd
+              </Link>
+            </span>
           </p>
 
-          <div className="flex items-center gap-5 text-xs text-white/45">
+          <div className="flex items-center gap-5 text-xs text-luxuryGold">
             <Link
               href="/privacy-policy"
-              className="hover:text-luxuryGold transition"
+              className="text-luxuryGold transition"
             >
               Privacy Policy
             </Link>
